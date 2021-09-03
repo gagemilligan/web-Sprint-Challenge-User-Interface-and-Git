@@ -28,6 +28,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+}
 body {
 	line-height: 1;
 }
@@ -49,6 +50,8 @@ table {
 
 * {
     box-sizing: border-box;
+    color: black;
+    text-decoration: none;
 }
 
 html, body {
@@ -94,24 +97,22 @@ p {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
-.middle-content .boxes {
+.middle-content .boxes{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
-    display: flex;
+    background-color: red;
     align-items: center;
-    justify-content: center;
 }
-
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +144,67 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: baseline;
+    height: 10vh;
+    padding-top: 2%;
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: black;
+}
+.jumbo{
+    display:flex;
+    justify-content: center;
+}
+.jumbo-about{
+    display: flex;
+    justify-content: center;
+}
+.center{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+.strategy{
+    width: 40%;
+    border-bottom: 1px dashed black;
+}
+.strategy img{
+    width: 95%;
+}
+.how-we-work{
+    width: 40%;
+    border-bottom: 1px dashed black;
+}
+.how-we-work img{
+    width: 95%;
+}
+.places-we-work{
+    width: 40%;
+    border-bottom: 1px dashed black;
+}
+.places-we-work img{
+    width: 95%;
+}
+.collaboration{
+    width: 40%;
+    border-bottom: 1px dashed black;
+}
+.collaboration img{
+    width: 95%;
+}
+.about{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-bottom: 1px dotted black;
 }
